@@ -2,8 +2,8 @@
 /* برای موبایل‌ها */
 @media (max-width: 600px) {
     body {
-   width: 1500px;
-   
+   width: 2000px;
+   height: 1000px;
         font-size: 14px;
     }
     .menu {
@@ -29,9 +29,9 @@
   
 
 html body{
-  width: 1500px;
 
-    height: 5000px;
+
+    height: 100%;
     margin: 0;
     padding: 0;
     overflow-y: auto;
@@ -46,7 +46,7 @@ overflow-x: hidden;
 
 body {
     font-family: Arial, sans-serif;
-  width: 1500px;    
+    
     display: flex;
     
     align-items: center;
@@ -64,7 +64,7 @@ position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    
+    height: 100vh;
     position: relative;
     min-height: 100vh;
     margin: 0;
@@ -481,7 +481,7 @@ body {
     width: 100%;
   position: absolute;
   top: 185%;
-  width: 2000px;  
+  width: 2000pxpx;  
   margin-top: auto; /* فوتر را در انتهای صفحه می‌برد */
 }
 
