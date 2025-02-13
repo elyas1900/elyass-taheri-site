@@ -2,7 +2,7 @@
 /* برای موبایل‌ها */
 @media (max-width: 600px) {
     body {
-   width: 100%;
+   width: 1500px;
    
         font-size: 14px;
     }
@@ -29,9 +29,9 @@
   
 
 html body{
-  width: 100%;
+  width: 1500px;
 
-    height: 500px;
+    height: 5000px;
     margin: 0;
     padding: 0;
     overflow-y: auto;
@@ -46,7 +46,7 @@ overflow-x: hidden;
 
 body {
     font-family: Arial, sans-serif;
-  width: 100%;    
+  width: 1500px;    
     display: flex;
     
     align-items: center;
