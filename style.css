@@ -48,7 +48,7 @@ position: relative;
     background-color: #121212; /* رنگ پس‌زمینه تیره */
 
 
- width: 1700px   
+    
    
     
 }
@@ -494,10 +494,9 @@ padding: 10px;
 
 
 /* برای موبایل‌ها */
-@media (width: 3000px) {
+@media (max-width: 1700px) {
     body {
       font-size: 14px;
-      width: 1800px;
     }
     .menu {
       display: block;
@@ -506,6 +505,10 @@ padding: 10px;
     .container {
       padding: 10px;
     }
+    
+    
+
+
   }
   
   /* برای تبلت‌ها */
@@ -519,3 +522,303 @@ padding: 10px;
       /* تنظیم منو برای تبلت */
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+.other-skills {
+    text-align: center;
+    padding: 50px 20px;
+    background: #121212;
+    color: #fff;
+    position: absolute;
+    top: 155%;
+}
+
+.other-skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: #1e1e1e;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+
+.skill i {
+    font-size: 1.5rem;
+    color: #00aaff;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    background: #252525;
+}
+
+
+
+
+
+
+/* استایل کلی لودر */
+#preloaderr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000; /* پس‌زمینه مشکی */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  }
+  
+  /* طراحی مدرن لودر */
+  .loaderr {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .loaderr div {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(45deg, #00d4ff, #ff00ff); /* گرادینت جذاب */
+    border-radius: 50%;
+    box-shadow: 0 0 20px #00d4ff, 0 0 30px #ff00ff, 0 0 50px #ff00ff; /* سایه نئونی */
+    animation: pulse 1.5s infinite ease-in-out, bounce 1s infinite alternate;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* حرکت هر دایره به طور جداگانه */
+  .loader div:nth-child(1) { animation-delay: 0s; }
+  .loader div:nth-child(2) { animation-delay: 1s; }
+  .loader div:nth-child(3) { animation-delay: 1s; }
+  .loader div:nth-child(4) { animation-delay: 1s; }
+  
+  /* انیمیشن ضربان و رقص */
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.5); opacity: 1; }
+  }
+  
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+  
+  /* حذف لودر بعد از لود کامل */
+  .preloaderr-hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 1s ease-out, visibility 1s ease-out;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .h1-class {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Times New Roman", serif;
+    color: #00bcd4;
+    text-shadow: 0 0 10px #00bcd4, 0 0 20px #008c9e;
+    padding: 20px 40px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    position: absolute;
+    top: 5%;
+  }
+  
+  /* ذرات درخشان که دور متن می‌چرخند */
+  .glow {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle, #00ffff, transparent);
+    border-radius: 50%;
+    animation: orbit 3s linear infinite;
+  }
+  
+  /* موقعیت اولیه 4 تا ذره */
+  .glow:nth-child(1) { top: -20px; left: 50%; animation-delay: 0s; }
+  .glow:nth-child(2) { right: -20px; top: 50%; animation-delay: 0.5s; }
+  .glow:nth-child(3) { bottom: -20px; left: 50%; animation-delay: 1s; }
+  .glow:nth-child(4) { left: -20px; top: 50%; animation-delay: 1.5s; }
+  
+  /* حرکت چرخشی */
+  @keyframes orbit {
+    0% { transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    25% { transform: rotate(90deg) translateX(50px) rotate(-90deg); }
+    50% { transform: rotate(180deg) translateX(50px) rotate(-180deg); }
+    75% { transform: rotate(270deg) translateX(50px) rotate(-270deg); }
+    100% { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+  }
+  
+
+
+
+  :root {
+    --bg-color: #1a1a1a; /* پس‌زمینه هماهنگ */
+    --gradient-start: #00c6ff; /* رنگ آموا */
+    --gradient-end: #ff00ff; /* رنگ متضاد مدرن */
+    --highlight-color: rgba(0, 255, 255, 0.5); /* رنگ نورپردازی */
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    position: relative;
+}
+
+h1 .glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--gradient-start);
+    width: 100%;
+    height: 100%;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px var(--gradient-start), 0 0 10px var(--gradient-start), 0 0 15px var(--gradient-start);
+    }
+    100% {
+        box-shadow: 0 0 5px var(--gradient-end), 0 0 10px var(--gradient-end), 0 0 15px var(--gradient-end);
+    }
+}
+
+/* استایل برای موبایل */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .menu-toggle {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .side-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #1a1a1a;
+        z-index: 100;
+        height: 100%;
+        padding-top: 50px;
+        display: none; /* Initially hidden */
+    }
+
+    .side-menu.active {
+        display: block;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .java, .css1, .jv {
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .bio-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* برای نمایش در صفحات بزرگ‌تر */
+@media (min-width: 769px) {
+    .side-menu {
+        display: block;
+    }
+}
