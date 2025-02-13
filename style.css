@@ -494,7 +494,7 @@ padding: 10px;
 
 
 /* برای موبایل‌ها */
-@media (max-width: 1700px) {
+@media (max-width: 3000px) {
     body {
       font-size: 14px;
     }
