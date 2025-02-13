@@ -64,7 +64,7 @@ position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+    
     position: relative;
     min-height: 100vh;
     margin: 0;
@@ -481,7 +481,7 @@ body {
     width: 100%;
   position: absolute;
   top: 185%;
-  width: 1000px;  
+  width: 2000px;  
   margin-top: auto; /* فوتر را در انتهای صفحه می‌برد */
 }
 
