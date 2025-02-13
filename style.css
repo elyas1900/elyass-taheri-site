@@ -494,9 +494,10 @@ padding: 10px;
 
 
 /* برای موبایل‌ها */
-@media (max-width: 3000px) {
+@media (width: 3000px) {
     body {
       font-size: 14px;
+      width: 1800px;
     }
     .menu {
       display: block;
